@@ -9,5 +9,5 @@ it('should throw error if input version is invalid', () => {
 });
 
 it('should return semver increment if provided', () => {
-  expect(getNewVersion('1.0.0', 'patch')).toEqual('patch');
+  expect(getNewVersion('1.0.0', 'patch')).toEqual('1.0.1');
 });
