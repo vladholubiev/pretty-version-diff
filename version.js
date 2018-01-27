@@ -17,8 +17,6 @@ exports.getNewVersion = (oldVersion, input) => {
     );
   }
 
-  console.log(oldVersion, input);
-  console.log(semver.inc(oldVersion, input));
   return SEMVER_INCREMENTS.includes(input) ? input : semver.inc(oldVersion, input);
 };
 
