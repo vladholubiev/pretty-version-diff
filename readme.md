@@ -1,4 +1,4 @@
-# pretty-version-diff [![CircleCI](https://img.shields.io/circleci/project/github/vladgolubev/pretty-version-diff.svg)](https://circleci.com/gh/vladgolubev/pretty-version-diff)
+# pretty-version-diff [![CircleCI](https://img.shields.io/circleci/project/github/vladgolubev/pretty-version-diff.svg)](https://circleci.com/gh/vladgolubev/pretty-version-diff) ![](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 
 > Print semver version diff like sindresorhus/np CLI
 
