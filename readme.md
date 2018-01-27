@@ -15,29 +15,11 @@ $ yarn add pretty-version-diff
 ```js
 const prettyVersionDiff = require('pretty-version-diff');
 
-prettyVersionDiff('unicorns');
-//=> 'unicorns & rainbows'
+prettyVersionDiff('1.0.0', 'patch'); // see screenshot below
 ```
 
-## API
-
-### prettyVersionDiff(input, [options])
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
+![](demo.png)
 
 ## License
 
-MIT © [Vlad Holubiev](http://vladholubiev.com)
+MIT © [Vlad Holubiev](https://vladholubiev.com)
