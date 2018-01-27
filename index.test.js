@@ -18,3 +18,8 @@ it('should return incremented major version', () => {
   const versionDiff = prettyVersionDiff('1.0.1', 'major');
   expect(versionDiff).toEqual('major');
 });
+
+it('should return incremented prerelease version', () => {
+  const versionDiff = prettyVersionDiff('1.0.1', 'prerelease');
+  expect(versionDiff).toEqual('prerelease');
+});

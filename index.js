@@ -11,14 +11,19 @@ module.exports = function prettyVersionDiff(oldVersion, inc) {
   for (let i = 0; i < newVersion.length; i++) {
     if (newVersion[i] !== oldVersion[i] && !firstVersionChange) {
       output.push(`${chalk.dim.cyan(newVersion[i])}`);
+
       firstVersionChange = true;
-    } else if (newVersion[i].indexOf('-') >= 1) {
-      let preVersion = [];
-      preVersion = newVersion[i].split('-');
-      output.push(`${chalk.dim.cyan(`${preVersion[0]}-${preVersion[1]}`)}`);
     } else {
-      output.push(chalk.reset.dim(newVersion[i]));
+      if (newVersion[i].indexOf('-') >= 1) {
+        let preVersion = [];
+
+        preVersion = newVersion[i].split('-');
+        output.push(`${chalk.dim.cyan(`${preVersion[0]}-${preVersion[1]}`)}`);
+      } else {
+        output.push(chalk.reset.dim(newVersion[i]));
+      }
     }
   }
+
   return output.join(chalk.reset.dim('.'));
 };
