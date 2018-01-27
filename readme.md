@@ -2,6 +2,8 @@
 
 > Print semver version diff like sindresorhus/np CLI
 
+Credits to: [sindresorhus/np](https://github.com/sindresorhus/np/blob/master/lib/ui.js#L9)
+
 ## Install
 
 ```
